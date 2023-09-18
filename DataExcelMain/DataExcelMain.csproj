@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B462E3A6-42FC-4B82-A87E-28BF4FBC68E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Feng.DataDesign</RootNamespace>
+    <AssemblyName>DataExcel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>DENEW.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <FileAlignment>1024</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataExcel.v1.1, Version=1.0.5.14, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DataExcel.v1.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DataUtils.v1.1, Version=1.0.5.14, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DataUtils.v1.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\CodePanel\CodeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\CodePanel\CodePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\StatisticsAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomFunctions\CustomFunctions.cs" />
+    <Compile Include="Dal\clsemployee.cs" />
+    <Compile Include="Dialog\Class1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmFill.Designer.cs">
+      <DependentUpon>frmFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrower.Designer.cs">
+      <DependentUpon>frmBrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGridTableCell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGridTableCell.Designer.cs">
+      <DependentUpon>frmGridTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInput.Designer.cs">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForm.Designer.cs">
+      <DependentUpon>frmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain2_Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2_ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2_DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2_Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2.Designer.cs">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frm_database_select_mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frm_database_select_mode.Designer.cs">
+      <DependentUpon>frm_database_select_mode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\ScriptSample.cs" />
+    <Compile Include="Function\PropertyAction.cs" />
+    <Compile Include="Function\DataExcelProjectFunction.cs" />
+    <Compile Include="Model\NodeTag.cs" />
+    <Compile Include="Model\clsemployee.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs" />
+    <Compile Include="Version.cs" />
+    <EmbeddedResource Include="Control\StatisticsAnalysis.resx">
+      <DependentUpon>StatisticsAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmFill.resx">
+      <DependentUpon>frmFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frm_database_select_mode.resx">
+      <DependentUpon>frm_database_select_mode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrower.resx">
+      <DependentUpon>frmBrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGridTableCell.resx">
+      <DependentUpon>frmGridTableCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInput.resx">
+      <DependentUpon>frmInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForm.resx">
+      <DependentUpon>frmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain2.resx">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlus.resx">
+      <DependentUpon>frmPlus.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Plus.cs" />
+    <Compile Include="frmPlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlus.Designer.cs">
+      <DependentUpon>frmPlus.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\ToolStripPanel.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\DataExcel.v1.1.dll" />
+    <Content Include="Lib\DataExcel.v1.1.pdb" />
+    <Content Include="Lib\DataUtils.v1.1.dll" />
+    <Content Include="Lib\DataUtils.v1.1.pdb" />
+    <None Include="Resources\CommandRowUnLock_16.png" />
+    <None Include="Resources\CommandImport_16.png" />
+    <None Include="CommandEnterAccount.png" />
+    <None Include="Resources\RowLock_16.png" />
+    <None Include="Resources\DENEW.png" />
+    <None Include="image\Command\CommandPaste.png" />
+    <None Include="image\Command\CommandPasteFormat.png" />
+    <None Include="image\Command\CommandCopyAll.png" />
+    <Content Include="DENEW.ico" />
+    <Content Include="image\GroupAlignment.png" />
+    <Content Include="image\GroupTableAlignment.png" />
+    <Content Include="image\TableCellAlignBottom.png" />
+    <Content Include="image\TableCellAlignBottomCenter.png" />
+    <Content Include="image\TableCellAlignBottomLeft.png" />
+    <Content Include="image\TableCellAlignBottomRight.png" />
+    <Content Include="image\TableCellAlignMiddleCenter.png" />
+    <Content Include="image\TableCellAlignMiddleRight.png" />
+    <Content Include="image\TableCellAlignTop.png" />
+    <Content Include="image\TableCellAlignTopCenter.png" />
+    <None Include="Resources\CheckStateYes.png" />
+    <None Include="Resources\CheckStateNo.png" />
+    <None Include="img\ToolBarItemDrop.png" />
+    <None Include="Resources\CommandCellImageButton.png" />
+    <None Include="Resources\CommandCellBackImageCancel.png" />
+    <None Include="Resources\CommandCellBackImage.png" />
+    <None Include="Resources\CommandMulCellBackImageCancel.png" />
+    <None Include="Resources\CommandCellVisable.png" />
+    <None Include="Resources\CommandCellHide.png" />
+    <None Include="Resources\CommandMulCellBackImage.png" />
+    <None Include="img\Command\新建文件夹 %282%29\CommandPrintArea.png" />
+    <None Include="Resources\CommandTextFormatText.png" />
+    <None Include="img\Command\新建文件夹 %282%29\CommandCellEditDateTime.png" />
+    <None Include="img\Command\新建文件夹 %282%29\CommandCellEditTime.png" />
+    <None Include="Resources\CommandFont.png" />
+    <None Include="img\Command\新建文件夹\CommandCellForeColor.png" />
+    <None Include="img\Command\新建文件夹\CommandCellBackGround.png" />
+    <None Include="img\Command\新建文件夹\CommandTextOrientationRotateDown.png" />
+    <None Include="img\Command\新建文件夹\CommandCellEditCnNumber.png" />
+    <None Include="img\Command\新建文件夹\CommandCellReadOnly.png" />
+    <None Include="img\Command\新建文件夹\CommandCellEditNumber.png" />
+    <None Include="img\Command\新建文件夹\CommandTextFormatMoney.png" />
+    <None Include="img\Command\新建文件夹\CommandTextFormatDecimalPlaces2.png" />
+    <None Include="img\Command\新建文件夹\CommandTextFormatDecimalPlaces1.png" />
+    <None Include="img\Command\新建文件夹\CommandTextFormatPercent.png" />
+    <None Include="img\Command\新建文件夹\CommandTextFormatDateTimeDay.png" />
+    <None Include="img\Command\新建文件夹\CommandMergeCell.png" />
+    <None Include="img\Command\新建文件夹\CommandInsertCellMoveRight.png" />
+    <None Include="img\Command\新建文件夹\CommandInsertCellMoveDown.png" />
+    <None Include="img\Command\新建文件夹\CommandGridReadOnly.png" />
+    <None Include="img\Command\新建文件夹\CommandDeleteColumn.png" />
+    <None Include="img\Command\新建文件夹\CommandDeleteCellRow.png" />
+    <None Include="img\Command\新建文件夹\CommandDeleteCellMoveUp.png" />
+    <None Include="img\Command\新建文件夹\CommandDeleteCellMoveLeft.png" />
+    <None Include="img\Command\新建文件夹\CommandColumnAutoSize.png" />
+    <None Include="img\Command\新建文件夹\CommandCellEditNull.png" />
+    <None Include="img\Command\新建文件夹\CommandCellEditColor.png" />
+    <None Include="img\Command\新建文件夹\CommandTextFormatDateTimeTime.png" />
+    <None Include="img\Command\CommandTextAutoMultiline.png" />
+    <None Include="img\Command\CommandUndo.png" />
+    <None Include="img\Command\CommandFontSizeDown.png" />
+    <None Include="img\Command\CommandFrozen.png" />
+    <None Include="img\Command\CommandFrozenColumn.png" />
+    <None Include="img\Command\CommandFrozenRow.png" />
+    <Content Include="img\Command\CommandNew.png" />
+    <Content Include="img\Command\CommandOpen.png" />
+    <Content Include="img\Command\CommandPrint.png" />
+    <Content Include="img\Command\CommandPrintSetting.png" />
+    <Content Include="img\Command\CommandPrintView.png" />
+    <None Include="img\Command\CommandRedo.png" />
+    <None Include="img\Command\CommandRepeat.png" />
+    <None Include="img\Command\CommandRememberBegin.png" />
+    <None Include="img\Command\CommandRememberEnd.png" />
+    <Content Include="img\Command\CommandSave.png" />
+    <Content Include="img\Command\CommandSaveAs.png" />
+    <None Include="img\Command\CommandTextAlignBottom.png" />
+    <None Include="Resources\CommandTextAlignCenter.png" />
+    <None Include="Resources\CommandBorderClear.png" />
+    <None Include="Resources\CommandBorderRight.png" />
+    <None Include="Resources\CommandBorderNull.png" />
+    <None Include="Resources\CommandBorderLeftTopToRightBottom.png" />
+    <None Include="Resources\CommandBorderLeftBoomToRightTop.png" />
+    <None Include="Resources\CommandBorderLeft.png" />
+    <None Include="Resources\CommandBorderFull.png" />
+    <None Include="Resources\CommandBorderBottom.png" />
+    <None Include="Resources\CommandBorderBorderOutside.png" />
+    <None Include="Resources\CommandBorderTop.png" />
+    <None Include="img\Command\CommandDeleteRow.png" />
+    <None Include="img\Command\CommandDeleteColumn.png" />
+    <None Include="img\Command\CommandCellEditRadioBox.png" />
+    <None Include="img\Command\CommandCellEditPassword.png" />
+    <None Include="img\Command\CommandCellEditLinkLabel.png" />
+    <None Include="img\Command\CommandCellEditLabel.png" />
+    <None Include="img\Command\CommandCellEditImage.png" />
+    <None Include="img\Command\CommandCellEditGridView.png" />
+    <None Include="img\Command\CommandCellEditComboBox.png" />
+    <None Include="img\Command\CommandCellEditCheckBox.png" />
+    <None Include="img\Command\CommandBorderTopClear.png" />
+    <None Include="img\Command\CommandBorderTop.png" />
+    <None Include="img\Command\CommandBorderRight.png" />
+    <None Include="img\Command\CommandBorderLeftTopToRightBottom.png" />
+    <None Include="img\Command\CommandBorderLeft.png" />
+    <None Include="img\Command\CommandBorderFull.png" />
+    <None Include="img\Command\CommandBorderBottom.png" />
+    <None Include="img\Command\ShowGridScrollerRight.png" />
+    <None Include="img\Command\ShowGridReticleTop.png" />
+    <None Include="img\Command\ShowGridReticleLeft.png" />
+    <None Include="img\Command\CommandTextAlignVerticalCenter.png" />
+    <None Include="img\Command\CommandTextAlignTop.png" />
+    <None Include="img\Command\CommandTextAlignRight.png" />
+    <None Include="img\Command\CommandTextAlignLeft.png" />
+    <None Include="img\Command\CommandTextAlignHorizontalCenter.png" />
+    <None Include="img\Command\CommandTextAlignCenter.png" />
+    <None Include="img\Command\CommandSumSelectCells.png" />
+    <None Include="img\Command\CommandSum.png" />
+    <None Include="img\Command\CommandInsertRow.png" />
+    <None Include="img\Command\CommandInsertColumn.png" />
+    <None Include="img\Command\CommandGridShowRowHeader.png" />
+    <None Include="img\Command\CommandGridShowGridColumnLine.png" />
+    <None Include="img\Command\CommandGridShowColumnHeader.png" />
+    <None Include="img\Command\CommandFontUnderline.png" />
+    <None Include="img\Command\CommandFontStrikeout.png" />
+    <None Include="img\Command\CommandFontSizeUp.png" />
+    <None Include="img\Command\CommandFontItalic.png" />
+    <None Include="img\Command\CommandFontBold.png" />
+    <None Include="img\Command\CommandEmpty.png" />
+    <None Include="Resources\formmin1.png" />
+    <None Include="Resources\formmax1.png" />
+    <None Include="Resources\close161.png" />
+    <None Include="Resources\DE2_64.png" />
+    <None Include="Resources\DE2_32.png" />
+    <None Include="Resources\DE2.png" />
+    <None Include="Resources\DE2_128.png" />
+    <None Include="Resources\image16_automulline.png" />
+    <None Include="Resources\zoomin_20.png" />
+    <None Include="Resources\zoom_out.png" />
+    <None Include="Resources\zoom_in.png" />
+    <None Include="Resources\wrench.png" />
+    <None Include="Resources\window_show.png" />
+    <None Include="Resources\window_hide.png" />
+    <None Include="Resources\user_business.png" />
+    <None Include="Resources\user_black_female.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\treeedit.png" />
+    <None Include="Resources\trash_16.png" />
+    <None Include="Resources\TextBoxLinkCreate.png" />
+    <None Include="Resources\stop16.png" />
+    <None Include="Resources\star_full.png" />
+    <None Include="Resources\star_boxed_full.png" />
+    <None Include="Resources\star_20.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\refresh_20.png" />
+    <None Include="Resources\png16_visible88.png" />
+    <None Include="Resources\play16.png" />
+    <None Include="Resources\pipette.png" />
+    <None Include="Resources\pin.png" />
+    <None Include="Resources\pause16.png" />
+    <None Include="Resources\OutlineMoveUp.png" />
+    <None Include="Resources\OutlineMoveDown.png" />
+    <None Include="Resources\OutlineExpand.png" />
+    <None Include="Resources\okay.png" />
+    <None Include="Resources\net_deconnect.png" />
+    <None Include="Resources\net_connected.png" />
+    <None Include="Resources\mainico2.png" />
+    <None Include="Resources\mainico.png" />
+    <None Include="Resources\MailMergeGotToLastRecord.png" />
+    <None Include="Resources\MailMergeGoToPreviousRecord.png" />
+    <None Include="Resources\MailMergeGoToNextRecord.png" />
+    <None Include="Resources\MailMergeGoToFirstRecord.png" />
+    <None Include="Resources\MailDelete.png" />
+    <None Include="Resources\mail_light_right.png" />
+    <None Include="Resources\lock_large_unlocked.png" />
+    <None Include="Resources\lock_large_locked.png" />
+    <None Include="Resources\lock_20.png" />
+    <None Include="Resources\insertcelltop.png" />
+    <None Include="Resources\insertcellright16.png" />
+    <None Include="Resources\insertcellleft16.png" />
+    <None Include="Resources\insertcellbottom.png" />
+    <None Include="Resources\insertcell16.png" />
+    <None Include="Resources\info_20.png" />
+    <None Include="Resources\image16_zoom_out.png" />
+    <None Include="Resources\image16_zoom_in.png" />
+    <None Include="Resources\image16_wall_brick.png" />
+    <None Include="Resources\image16_wall.png" />
+    <None Include="Resources\image16_UserForld.png" />
+    <None Include="Resources\image16_user_female.png" />
+    <None Include="Resources\image16_user_business_boss.png" />
+    <None Include="Resources\image16_user.png" />
+    <None Include="Resources\image16_sprocket_dark.png" />
+    <None Include="Resources\image16_sound_note.png" />
+    <None Include="Resources\image16_Paste.png" />
+    <None Include="Resources\image16_hammer_screwdriver.png" />
+    <None Include="Resources\image16_group_blue_remove.png" />
+    <None Include="Resources\image16_group_blue_add.png" />
+    <None Include="Resources\image16_group_blue.png" />
+    <None Include="Resources\image16_gem_options.png" />
+    <None Include="Resources\image16_folder_classic_remove.png" />
+    <None Include="Resources\image16_folder_classic_add.png" />
+    <None Include="Resources\image16_flag-16.png" />
+    <None Include="Resources\image16_films.png" />
+    <None Include="Resources\image16_contact_blue_remove.png" />
+    <None Include="Resources\image16_contact_blue_add.png" />
+    <None Include="Resources\image16_contact_blue.png" />
+    <None Include="Resources\image16_configure16.png" />
+    <None Include="Resources\image16_computer16.png" />
+    <None Include="Resources\image16_application2.png" />
+    <None Include="Resources\image_cultured.png" />
+    <None Include="Resources\home_green.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\heart_delete.png" />
+    <None Include="Resources\heart_add.png" />
+    <None Include="Resources\heart.png" />
+    <None Include="Resources\hcard_remove.png" />
+    <None Include="Resources\hcard_add.png" />
+    <None Include="Resources\GroupPrintPreviewZoom.png" />
+    <None Include="Resources\GroupPivotTableOptions.png" />
+    <None Include="Resources\GroupPivotChartDataAccess.png" />
+    <None Include="Resources\GroupInsertMediaClips.png" />
+    <None Include="Resources\GroupInclude.png" />
+    <None Include="Resources\group_delete.png" />
+    <None Include="Resources\group_add.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\gem_remove.png" />
+    <None Include="Resources\formmin.png" />
+    <None Include="Resources\formmax.png" />
+    <None Include="Resources\forld.png" />
+    <None Include="Resources\Folder_Open.png" />
+    <None Include="Resources\folder_new.png" />
+    <None Include="Resources\Folder_Closed.png" />
+    <None Include="Resources\folder_classic_up.png" />
+    <None Include="Resources\folder_classic_opened.png" />
+    <None Include="Resources\FileSaveAsWord97_2003.png" />
+    <None Include="Resources\FileSaveAsExcel97_2003.png" />
+    <None Include="Resources\FileSave.png" />
+    <None Include="Resources\FilePrintQuick.png" />
+    <None Include="Resources\FilePrintPreview.png" />
+    <None Include="Resources\FileOpenDatabase.png" />
+    <None Include="Resources\FileNewDialogClassic.png" />
+    <None Include="Resources\email_go.png" />
+    <None Include="Resources\edit16.png" />
+    <None Include="Resources\delete16.png" />
+    <None Include="Resources\DeclineInvitation.png" />
+    <None Include="Resources\DCode_64.png" />
+    <None Include="Resources\DCode_36.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\CustomActionsMenu.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Computer_20.png" />
+    <None Include="Resources\coloredit_16x161.png" />
+    <None Include="Resources\close16.png" />
+    <None Include="Resources\Close_16x16.png" />
+    <None Include="Resources\clear_16.png" />
+    <None Include="Resources\automulline.png" />
+    <None Include="Resources\arrow_up.png" />
+    <None Include="Resources\arrow_down.png" />
+    <None Include="Resources\coloredit_16x16.png" />
+    <None Include="app.config" />
+    <None Include="image\Underline.png" />
+    <None Include="image\ShadowColorPickerClassic.png" />
+    <None Include="image\PictureInsertFromFilePowerPoint.png" />
+    <None Include="image\PictureEffectsSoftEdgesGallery.png" />
+    <None Include="image\Italic.png" />
+    <None Include="image\GroupPivotTableToolsAccess.png" />
+    <None Include="image\FormattingDecreaseDecimals.png" />
+    <None Include="image\FontSizeIncrease1Point.png" />
+    <None Include="image\FontSizeDecreaseWord.png" />
+    <None Include="image\FontColorPicker.png" />
+    <None Include="image\ChartChangeType.png" />
+    <None Include="image\Bullets.png" />
+    <None Include="image\BrowsePrevious.png" />
+    <None Include="image\BrowseNext.png" />
+    <None Include="image\BreakInsertDialog.png" />
+    <None Include="image\BorderTopAndThickBottom.png" />
+    <None Include="image\BorderThickOutside.png" />
+    <None Include="image\BordersAll.png" />
+    <None Include="image\BorderOutside.png" />
+    <None Include="image\BorderLeftWord.png" />
+    <None Include="image\BorderLeftNoToggle.png" />
+    <None Include="image\BorderLeft.png" />
+    <None Include="image\BorderInsideVertical.png" />
+    <None Include="image\BorderInsideHorizontal.png" />
+    <None Include="image\BorderInside.png" />
+    <None Include="image\BorderDiagonalDown.png" />
+    <None Include="image\BorderBottom.png" />
+    <None Include="image\Bold.png" />
+    <None Include="image\BlogHomePage.png" />
+    <None Include="image\BlackAndWhiteDontShow.png" />
+    <None Include="image\BlackAndWhiteBlackWithWhiteFill.png" />
+    <None Include="image\BarcodeInsert.png" />
+    <None Include="image\AutoSum.png" />
+    <None Include="image\ApplyPercentageFormat.png" />
+    <None Include="image\ApplyCurrencyFormat.png" />
+    <None Include="image\ApplyCommaFormat.png" />
+    <None Include="image\AlignTopExcel.png" />
+    <None Include="image\AlignRight.png" />
+    <None Include="image\AlignMiddleExcel.png" />
+    <None Include="image\AlignLeft.png" />
+    <None Include="image\AlignCenter.png" />
+    <None Include="image\AlignBottomExcel.png" />
+    <None Include="image\AdvancedFileProperties.png" />
+    <None Include="image\AdpStoredProcedureEditSql.png" />
+    <None Include="image\AdpOutputOperationsSortDescending.png" />
+    <None Include="image\AdpOutputOperationsSortAscending.png" />
+    <None Include="image\AdpDiagramNewLabel.png" />
+    <None Include="image\ActiveXRadioButton.png" />
+    <None Include="image\ActiveXLabel.png" />
+    <None Include="image\ActiveXImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

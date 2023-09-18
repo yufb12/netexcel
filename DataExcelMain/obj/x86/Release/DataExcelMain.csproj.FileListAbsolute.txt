@@ -1,0 +1,11 @@
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\DataExcelMain.csprojAssemblyReference.cache
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.DataDesign.frm_database_select_mode.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.Excel.frmBrower.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.Excel.frmGridTableCell.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.Excel.frmInput.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.DataDesign.frmForm.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.DataDesign.frmMain2.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.DataDesign.Properties.Resources.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\Feng.Excel.frmPlus.resources
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\DataExcelMain.csproj.GenerateResource.cache
+I:\Tool\OpenSource\SysTools\test\DataExcelMain\obj\x86\Release\DataExcel.exe.licenses
